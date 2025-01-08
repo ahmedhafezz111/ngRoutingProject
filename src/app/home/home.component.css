@@ -1,0 +1,23 @@
+.home{
+    padding: 86px 0 86px 0;
+    min-height: inherit;
+    background-color: #1abc9c;
+}
+.line{
+    width: 160px;
+    height: 4px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 50%;
+}
+.icon{
+    position: relative;
+
+}
+.icon i{
+    background-color: #1abc9c;
+    z-index: 5;
+    border: 1px solid #1abc9c;
+    border-radius: 50% ;
+    padding: 10px;
+}

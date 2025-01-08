@@ -1,0 +1,80 @@
+  <div class="row" >
+    <div class="col-md-4 g-5">
+      <div class="photo-card  " (click)="showModal(imageElement1)"  >
+        <div class="layer  d-flex justify-content-center align-items-center rounded-3">
+          <div class="icon ">
+            <i class="fa-solid fa-plus text-light fw-bold"></i>
+          </div>
+        </div>
+        <img   #imageElement1  src="/images/poert1.png"   class="w-100 rounded-3" alt="">
+      </div>
+  
+    </div>
+    <div class="col-md-4 g-5">
+      <div class="photo-card  " (click)="showModal(imageElement2)">
+        <div class="layer  d-flex justify-content-center align-items-center rounded-3">
+          <div class="icon ">
+            <i class="fa-solid fa-plus text-light fw-bold"></i>
+          </div>
+        </div>
+        <img  #imageElement2   src="/images/port2.png" class="w-100 rounded-3" alt="">
+      </div>
+  
+    </div>
+    <div class="col-md-4 g-5">
+      <div class="photo-card  " (click)="showModal(imageElement3)">
+        <div class="layer  d-flex justify-content-center align-items-center rounded-3">
+          <div class="icon ">
+            <i class="fa-solid fa-plus text-light fw-bold"></i>
+          </div>
+
+        </div>
+        <img  #imageElement3  src="/images/port3.png" class="w-100 rounded-3" alt="">
+      </div>
+  
+    </div>
+    <div class="col-md-4 g-5 mb-4">
+      <div class="photo-card  " (click)="showModal(imageElement4)">
+        <div class="layer  d-flex justify-content-center align-items-center rounded-3">
+          <div class="icon ">
+            <i class="fa-solid fa-plus text-light fw-bold"></i>
+          </div>
+
+        </div>
+        <img  #imageElement4  src="/images/poert1.png" class="w-100 rounded-3" alt="">
+      </div>
+  
+    </div>
+    <div class="col-md-4 g-5 mb-4">
+      <div class="photo-card  " (click)="showModal(imageElement5)">
+        <div class="layer  d-flex justify-content-center align-items-center rounded-3">
+          <div class="icon ">
+            <i class="fa-solid fa-plus text-light fw-bold"></i>
+          </div>
+
+        </div>
+        <img  #imageElement5  src="/images/port2.png" class="w-100 rounded-3" alt="">
+      </div>
+  
+    </div>
+    <div class="col-md-4 g-5 mb-4">
+      <div class="photo-card  " (click)="showModal(imageElement6)">
+        <div class="layer  d-flex justify-content-center align-items-center rounded-3">
+          <div class="icon ">
+            <i class="fa-solid fa-plus text-light fw-bold"></i>
+          </div>
+
+        </div>
+        <img  #imageElement6  src="/images/port3.png" class="w-100 rounded-3" alt="">
+      </div>
+  
+    </div>
+     
+  </div>
+  @if(isClicked){
+    <div  class="LightBoxContainer d-flex justify-content-center align-items-center " [class]="{'d-none': hideModal}" (click)="noModal()">
+    <div class="lightBox">
+      <img [src]="viewImg" alt="">
+    </div>
+  </div>
+  }
